@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "immoapp",
+    "slug": "immoapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.monprojet.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Nous avons besoin de l'accès à votre caméra pour prendre des photos.",
+        "NSPhotoLibraryUsageDescription": "Nous avons besoin de l'accès à votre bibliothèque de photos pour sélectionner des images."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
